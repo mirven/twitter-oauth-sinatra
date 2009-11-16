@@ -1,0 +1,13 @@
+directions using heroku for hosting:
+
+create twitter app at http://twitter.com/apps
+for callback url use http://<appname>.heroku.com/auth
+note consumer key and consumer secret
+
+heroku create <appname>
+heroku config:add consumer_key=<consumer key from twitter> consumer_secret=<consume secret from twitter>
+git push heroku master
+
+inspired by
+http://github.com/filiptepper/sinatra-oauth-1.0a-example
+http://github.com/moomerman/sinitter
